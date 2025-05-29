@@ -27,11 +27,11 @@ import { getBlocksMaps } from '@/lib/getBlocksMaps'
 
 export async function getStaticProps({ locale }) {
   try {
-    const { pagesJson, siteConfigObj } = await getBlocksMaps();
+    const { pagesJson, siteConfigObj } = await getBlocksMaps()
 
     let blocksJson = pagesJson.filter(block =>
       block.title !== 'Title' && block.slug !== 'index'
-    );
+    )
 
     return {
       props: {
@@ -41,14 +41,14 @@ export async function getStaticProps({ locale }) {
       revalidate: 1
     };
   } catch (error) {
-    console.error('Failed to fetch archive data:', error);
+    console.error('Failed to fetch archive data:', error)
     return {
       props: {
         blocksJson: [],
         siteConfigObj: {}
       },
       revalidate: 1
-    };
+    }
   }
 }
 
