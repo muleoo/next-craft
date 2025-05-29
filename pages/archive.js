@@ -29,7 +29,7 @@ export async function getStaticProps({ locale }) {
   try {
     const { pagesJson, siteConfigObj } = await getBlocksMaps()
 
-    let blocksJson = pagesJson.filter(block =>
+    const blocksJson = pagesJson.filter(block =>
       block.title !== 'Title' && block.slug !== 'index'
     )
 
