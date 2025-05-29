@@ -9,6 +9,7 @@ import {
   MenuIcon
 } from '@heroicons/react/outline'
 import ThemeSwitcher from './ThemeSwitcher.js'
+import Image from 'next/image'
 
 const NavBar = ({ siteConfigObj }) => {
   const router = useRouter()
@@ -138,7 +139,8 @@ const Header = ({ navBarTitle, siteConfigObj }) => {
           <Link passHref href='/'>
             <a aria-label={siteConfigObj['Site Title']}>
               <div className='h-6 hover:text-blue-500 dark:hover:text-blue-500 fill-current'>
-                <img alt='logo' className='w-6 h-6' src={siteConfigObj['Site Logo']} />
+                {/* <img alt='logo' className='w-6 h-6' src={siteConfigObj['Site Logo']} /> */}
+                <Image src={siteConfigObj['Site Logo']} alt="logo" width={24} height={24} />
               </div>
             </a>
           </Link>

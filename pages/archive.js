@@ -14,7 +14,7 @@ export async function getStaticProps() {
   // }
   blocksJson = blocksJson.filter(block =>
     block.title !== 'Title' && block.slug !== 'index'
-  );
+  )
 
   return {
     props: {
