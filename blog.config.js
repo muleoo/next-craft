@@ -5,9 +5,10 @@ const BLOG = {
   lightBackground: '#FFFFFF', // use hex value, don't forget '#' e.g #fffefc
   darkBackground: '#222222', // use hex value, don't forget '#'
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
-  craftConfigShareUrl: process.env.CRAFT_CONFIG_SHARE_URL
-    ? process.env.CRAFT_CONFIG_SHARE_URL
-    : 'https://s.craft.me/K4EwWTSos4qkRC', // The link to share your craft config
+  // craftConfigShareUrl: process.env.CRAFT_CONFIG_SHARE_URL
+  //   ? process.env.CRAFT_CONFIG_SHARE_URL
+  //   : 'https://s.craft.me/K4EwWTSos4qkRC', // The link to share your craft config
+  craftConfigShareUrl: 'https://s.craft.me/K4EwWTSos4qkRC', // The link to share your craft config
   seo: {
     keywords: ['Blog', 'Craft.do', 'Craft Docs', 'Next.js', 'TailwindCSS']
   },
